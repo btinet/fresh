@@ -33,12 +33,13 @@ class Bootstrap
      */
     private function runControllerMethod($class, $method, array $mandatory = array())
     {
+        $className = $class;
         if (!class_exists($class)) {
-            throw new Exception('Class not found.');
+            throw new Exception("Class not found: {$className}");
         }
         $class = new $class;
         if(!method_exists($class,$method)) {
-            throw new Exception('Method not found.');
+            throw new Exception("Method not found: {$className}::{$method}");
         }
         return call_user_func_array(array($class, $method), $mandatory);
     }
@@ -50,7 +51,7 @@ class Bootstrap
     {
         if(!isset($_ENV['NOTFOUND_CONTROLLER']))
         {
-            throw new Exception('NOTFOUND_CONTROLLER: is not set in env.yaml');
+            throw new Exception('NOTFOUND_CONTROLLER is not set in env.yaml');
         }
         return $classFQN = $_ENV['NOTFOUND_CONTROLLER'];
     }
@@ -78,7 +79,7 @@ class Bootstrap
                 $controller = $this->setNotFoundController();
                 echo $this->runControllerMethod($controller,'notFound',func_get_args());
             } catch (Exception $e) {
-                echo 'Exception abgefangen: '. $e->getMessage() . "\n";
+                echo 'Exception: '. $e->getMessage() . "\n";
             }
         });
     }
