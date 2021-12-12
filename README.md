@@ -14,3 +14,9 @@ Führe folgenden Befehl aus, um Javascript und SCSS zu kompilieren:
 ````apacheconf
 npm run build
 ````
+
+Benenne folgende Datei um und passe die Daten an:
+
+````apacheconf
+config/env.bak.yaml -> config/env.yaml
+````
