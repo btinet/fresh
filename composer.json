@@ -1,5 +1,5 @@
 {
-    "name": "btinet/logbook",
+    "name": "btinet/fresh",
     "authors": [
         {
             "name": "Benjamin Wagner",
@@ -9,7 +9,7 @@
         }
     ],
     "license": "MIT",
-    "description": "A simple php logbook application",
+    "description": "A simple php application template",
     "minimum-stability": "dev",
     "type": "project",
     "require": {
