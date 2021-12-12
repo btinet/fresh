@@ -1,0 +1,82 @@
+200: Operation successful.
+201: login successful.
+202: Tag has been saved.
+
+400: Please login to gain access to this resource.
+401: You do not have the needed permission.
+402:  No elements were selected.
+
+411:  Tag not found.
+412:  Task not found.
+
+1601: Password has to be a string.
+1602: Passwords are not equal.
+1603: Password is not long enaugh.
+1604: Password uses unallowed characters.
+
+16051:  Password contains to much spaces.
+16052:  Password does not contain any upper letters.
+16053:  Password does not contain any lower letters.
+16054:  Password does not contain any special characters.
+16055:  Password does not contain any numbers.
+
+
+21011:  User already exists.
+210111: User not found.
+210112: user and password do not match.
+
+21012: Email address already exists.
+
+21022:  Email address is not valid.
+
+21031:  username has to be a string.
+21034:  Firstname has to be a string.
+21035:  Lastname has to be a string.
+
+
+input:
+  user:
+    empty:  Please enter your username!
+    label: user
+  password:
+    empty:  Please enter your password!
+    label: password
+  password_retype:
+    empty:  Please reenter your password!
+    label: retype password
+  email:
+    empty:  Please enter your email address!
+    label: email address
+  firstname:
+    empty:  Please enter your firstname!
+    label: firstname
+  lastname:
+    empty:  Please enter your lastname!
+    label: lastname
+  tag_name:
+    empty: Please enter a tag name!
+    label: tag name
+
+button:
+  submit:
+    login:  login
+    register: register
+    save: save
+    update: update
+    abort: abort
+
+nav:
+  action:
+    login:  login
+    signup: register
+    logbook:  logbook
+    grades: grades
+    semesters: semesters
+    tasks: Tasks
+    tags: Tags
+
+title:
+  login:  login
+  logout: goodbye!
+  signup: register
+  semesters: semesters

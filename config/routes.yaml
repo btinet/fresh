@@ -1,0 +1,104 @@
+app_index:
+  expression: '/'
+  value:
+  controller: 'App\Controller\AppController'
+  method:     'index'
+  request:    'get'
+
+app_impressum:
+  expression: '/imprint'
+  value:
+  controller: 'App\Controller\AppController'
+  method:     'imprint'
+  request:    'get'
+
+app_tos:
+  expression: '/terms'
+  value:
+  controller: 'App\Controller\AppController'
+  method:     'tos'
+  request:    'get'
+
+task_index:
+  expression: '/task'
+  value:
+  controller: 'App\Controller\TaskController'
+  method: 'index'
+  request: ['get','post']
+
+task_new:
+  expression: '/task/new'
+  value:
+  controller: 'App\Controller\TaskController'
+  method: 'new'
+  request: ['get','post']
+
+task_update:
+  expression: '/task/([0-9]*)/update'
+  value:  'id'
+  controller: 'App\Controller\TaskController'
+  method: 'update'
+  request: ['get','post']
+
+task_done:
+  expression: '/task/([0-9]*)/done'
+  value:  'id'
+  controller: 'App\Controller\TaskController'
+  method: 'done'
+  request: 'post'
+
+task_delete:
+  expression: '/task/delete'
+  value:
+  controller: 'App\Controller\TaskController'
+  method: 'delete'
+  request: 'post'
+
+tag_index:
+  expression: '/tag'
+  value:
+  controller: 'App\Controller\TagController'
+  method: 'index'
+  request: 'get'
+
+tag_new:
+  expression: '/tag/new'
+  value:
+  controller: 'App\Controller\TagController'
+  method: 'new'
+  request: ['get','post']
+
+tag_update:
+  expression: '/tag/([0-9]*)/update'
+  value:  'id'
+  controller: 'App\Controller\TagController'
+  method: 'update'
+  request: ['get','post']
+
+tag_delete:
+  expression: '/tag/delete'
+  value:
+  controller: 'App\Controller\TagController'
+  method: 'delete'
+  request: 'post'
+
+user_login:
+  expression: '/login'
+  value:
+  controller: 'App\Controller\SecurityController'
+  method: 'login'
+  request: ['get','post']
+
+user_logout:
+  expression: '/logout'
+  value:
+  controller: 'App\Controller\SecurityController'
+  method: 'logout'
+  request: ['get','post']
+
+user_signup:
+  expression: '/signup'
+  value:
+  controller: 'App\Controller\SecurityController'
+  method: 'register'
+  request: ['get','post']
