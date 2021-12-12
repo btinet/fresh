@@ -15,11 +15,10 @@
     "require": {
         "steampixel/simple-php-router": "^0.7.0",
         "mustangostang/spyc": "^0.6.3",
-      "ext-json": "*",
+        "ext-json": "*",
         "twig/twig": ">=3.0",
-      "ext-pdo": "*",
-      "ext-mbstring": "*",
-        "knplabs/knp-time-bundle": "^1.17"
+        "ext-pdo": "*",
+        "ext-mbstring": "*"
     },
     "autoload": {
         "psr-4": {
