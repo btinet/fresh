@@ -1,5 +1,16 @@
 {% extends 'app.html.twig' %}
 
+{% block navigation %}
+    <div class="container">
+        <h1>Navigation</h1>
+        <a href="{{ route('') }}" class="btn btn-primary">Home</a>
+        <a class="btn btn-primary link" data-link="{{ route('imprint') }}">Aufgaben</a>
+    </div>
+    <div class="container">
+        <div id="loading"></div>
+    </div>
+{% endblock %}
+
 {% block content %}
     <div class="container">
         <h2>Hello {{ controller_name }}</h2>

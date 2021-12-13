@@ -1,0 +1,14 @@
+
+{% block content %}
+    <div class="container">
+        <h2>Hello {{ controller_name }}</h2>
+        <a class="btn btn-primary link" data-link="{{ route('terms') }}">Terms</a>
+        <p>
+            {% for i in 1..10 %}
+                Bla{{ i }}
+            {% endfor %}
+        </p>
+    </div>
+
+
+{% endblock %}
